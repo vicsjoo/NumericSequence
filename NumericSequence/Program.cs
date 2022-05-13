@@ -7,14 +7,14 @@ namespace NumericSequence
     {
         public static int maxNum = 20;
         public static int[] positionarray = new int[maxNum + 1];
-        static void Main(string[] args)
+        static void Main()
         {
-            nextNumbers();
+            NextNumbers();
             Console.ReadLine();
          //  findnearest();
         }
 
-        private static void nextNumbers()
+        private static void NextNumbers()
         {
             int curNum = 1;
             int count = 1;
@@ -46,7 +46,7 @@ namespace NumericSequence
            
 
         }
-        private static void findnearest()
+        private static void Findnearest()
         {
             int targetNumber = 20;
             int closest = positionarray.OrderBy(n => Math.Abs(n - targetNumber)).First();
